@@ -1,0 +1,53 @@
+<md-toolbar class="md-hue-2 customToolbar">
+  <div class="md-toolbar-tools">
+    <ol class="breadcrumb header">
+      <li ng-repeat="step in steps | limitTo:(steps.length-1)">
+        <a href="{{step.ncyBreadcrumbLink}}" ng-bind-html="step.ncyBreadcrumbLabel"></a>
+      </li>
+      <li ng-repeat="step in steps | limitTo:-1" class="active">
+        <span ng-bind-html="step.ncyBreadcrumbLabel"></span>
+      </li>
+    </ol>
+    <span flex></span>
+    <span>Foods</span>
+    <md-button class="md-icon-button" aria-label="cake">
+      <md-icon class="material-icons md-light md-24"> cake </md-icon>
+    </md-button>
+    <span>Travels</span>
+    <md-button class="md-icon-button" aria-label="flight">
+      <md-icon class="material-icons md-light md-24"> flight </md-icon>
+    </md-button>
+    <span>Games</span>
+    <md-button class="md-icon-button" aria-label="gamepad">
+      <md-icon class="material-icons md-light md-24"> gamepad </md-icon>
+    </md-button>
+    <span>Random</span>
+    <md-button class="md-icon-button" aria-label="pets">
+      <md-icon class="material-icons md-light md-24"> pets </md-icon>
+    </md-button>
+    <!--<md-button class="md-icon-button" aria-label="Settings">-->
+      <!--<md-icon class="material-icons md-light md-24" style="color: white"> menu </md-icon>-->
+    <!--</md-button>-->
+    <md-fab-speed-dial md-direction="down" md-open="isOpen"
+                       class="md-hover-full md-fling" style="margin-top: 35px"
+                       ng-mouseenter="isOpen=true" ng-mouseleave="isOpen=false">
+      <md-fab-trigger>
+        <md-button aria-label="menu" class="md-fab md-fab-style-button">
+          <md-tooltip md-direction="left" md-visible="tooltipVisible">Menu</md-tooltip>
+          <md-icon class="material-icons md-light md-24" style="color: white"> menu </md-icon>
+        </md-button>
+      </md-fab-trigger>
+
+      <md-fab-actions>
+        <!--<div ng-repeat="item in demo.items">-->
+          <md-button ui-sref="newPost" aria-label="mode_edit" class="md-fab md-fab-style-button md-mini">
+            <md-tooltip md-direction="left">
+              Create New Post
+            </md-tooltip>
+            <md-icon class="material-icons md-light md-24" style="color: white">mode_edit</md-icon>
+          </md-button>
+        <!--</div>-->
+      </md-fab-actions>
+    </md-fab-speed-dial>
+  </div>
+</md-toolbar>

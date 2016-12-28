@@ -1,0 +1,50 @@
+<div ncy-breadcrumb></div>
+<div class="hpanel" data-ng-controller="PostCtrl as ctrl">
+  <div class="panel-body">
+    <md-content layout-padding>
+      <div>
+        <form name="content">
+          <div layout="column">
+            <div flex>
+              <div layout-gt-xs="row">
+                <md-input-container class="md-block" flex-gt-xs="40">
+                  <label>Category</label>
+                  <md-select ng-model="abc">
+                    <md-option ng-repeat="category in ctrl.categories" value="{{category}}">
+                      {{category}}
+                    </md-option>
+                  </md-select>
+                </md-input-container>
+              </div>
+            </div>
+            <div flex>
+              <md-content md-theme="docs-dark" layout-gt-xs="row" layout-padding>
+                <div>
+                  <md-input-container>
+                    <label>Title</label>
+                    <input ng-model="user.title">
+                  </md-input-container>
+
+                  <md-input-container>
+                    <label>Email</label>
+                    <input ng-model="user.email" type="email">
+                  </md-input-container>
+                </div>
+              </md-content>
+            </div>
+            <div flex>
+              <md-input-container class="md-block" flex-gt-xs>
+                <summernote height="300"></summernote>
+              </md-input-container>
+            </div>
+            <div flex>
+              <div layout-gt-xs="row" layout-align="end center">
+                  <md-button class="md-raised">Submit</md-button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </md-content>
+  </div>
+</div>

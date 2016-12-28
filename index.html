@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css(.) css/vendor-index.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/lib/datatables/media/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/lib/summernote/dist/summernote.css">
+  <link rel="stylesheet" href="/lib/angular-datatables/dist/css/angular-datatables.css">
+  <link rel="stylesheet" href="/lib/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css">
+  <link rel="stylesheet" href="/lib/ui-select/dist/select.css">
+  <link rel="stylesheet" href="/lib/angular-material/angular-material.css">
+  <link rel="stylesheet" href="/lib/angular-material-data-table/dist/md-data-table.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+  <!-- build:css(.) css/index.min.css -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/build/app.css">
+  <link rel="stylesheet" href="/build/header.css">
+  <link rel="stylesheet" href="/build/main.css">
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+<body ng-app="blogvt">
+<!--[if lte IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div>
+  <div ui-view=""></div>
+</div>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  !function (A, n, g, u, l, a, r) {
+    A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+        (A[l].q = A[l].q || []).push(arguments)
+      }, A[l].l = +new Date, a = n.createElement(g),
+      r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+  }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) js/vendor-index.min.js -->
+<!-- bower:js -->
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/lib/datatables.net/js/jquery.dataTables.js"></script>
+<script src="/lib/datatables/media/js/jquery.dataTables.js"></script>
+<script src="/lib/chart.js/dist/Chart.js"></script>
+<script src="/lib/summernote/dist/summernote.js"></script>
+<script src="/lib/angular/angular.js"></script>
+<script src="/lib/angular-animate/angular-animate.js"></script>
+<script src="/lib/angular-aria/angular-aria.js"></script>
+<script src="/lib/angular-cookies/angular-cookies.js"></script>
+<script src="/lib/angular-messages/angular-messages.js"></script>
+<script src="/lib/angular-resource/angular-resource.js"></script>
+<script src="/lib/angular-route/angular-route.js"></script>
+<script src="/lib/angular-sanitize/angular-sanitize.js"></script>
+<script src="/lib/angular-touch/angular-touch.js"></script>
+<script src="/lib/angular-datatables/dist/angular-datatables.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/colreorder/angular-datatables.colreorder.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/columnfilter/angular-datatables.columnfilter.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/light-columnfilter/angular-datatables.light-columnfilter.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/colvis/angular-datatables.colvis.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/fixedcolumns/angular-datatables.fixedcolumns.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/fixedheader/angular-datatables.fixedheader.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/scroller/angular-datatables.scroller.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/tabletools/angular-datatables.tabletools.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/buttons/angular-datatables.buttons.js"></script>
+<script src="/lib/angular-datatables/dist/plugins/select/angular-datatables.select.js"></script>
+<script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="/lib/ui-select/dist/select.js"></script>
+<script src="/lib/angular-ui-switch/angular-ui-switch.js"></script>
+<script src="/lib/angular-material/angular-material.js"></script>
+<script src="/lib/angular-material-data-table/dist/md-data-table.js"></script>
+<script src="/lib/ngDraggable/ngDraggable.js"></script>
+<script src="/lib/angular-chart.js/dist/angular-chart.js"></script>
+<script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="/lib/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+<script src="/lib/angular-summernote/dist/angular-summernote.js"></script>
+<!-- endinject -->
+<!-- endbuild -->
+<!-- build:js(.) js/index.min.js -->
+<!-- inject:js -->
+
+
+<script src="/app/scripts/app.js"></script>
+
+
+<script src="/app/scripts/router.js"></script>
+
+
+<script src="/app/scripts/controllers/Main.js"></script>
+
+
+<script src="/app/scripts/controllers/PostCtrl.js"></script>
+
+
+<script src="/app/scripts/controllers/about.js"></script>
+
+
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>

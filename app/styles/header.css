@@ -1,0 +1,32 @@
+.breadcrumb.header {
+  background: #117F98;
+}
+
+.breadcrumb.header > .active {
+  color: white;
+}
+
+button.md-fab.md-fab-style-button {
+  background: #117F98 !important;
+  width: 36px;
+  height: 36px;
+}
+
+button.md-fab.md-fab-style-button:hover{
+  background: lightseagreen !important;
+  width: 36px;
+  height: 36px;
+}
+
+a.md-fab.md-fab-style-button {
+  background: #117F98 !important;
+  width: 36px;
+  height: 36px;
+}
+
+a.md-fab.md-fab-style-button:hover{
+  background: lightseagreen !important;
+  width: 36px;
+  height: 36px;
+}
+
